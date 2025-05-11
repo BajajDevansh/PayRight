@@ -1,0 +1,52 @@
+/* src/components/notifications/NotificationItem.css */
+.notification-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left-width: 4px;
+    border-left-style: solid;
+    margin-bottom: 0.5rem !important; /* Override list-group-flush margin if needed */
+    border-radius: var(--border-radius); /* Add some rounding */
+  }
+  
+  .notification-item.unread {
+    border-left-color: var(--primary-color);
+    background-color: #f8f9fa; /* Slightly different background for unread */
+  }
+  
+  .notification-item.read {
+    border-left-color: var(--border-color);
+    opacity: 0.8;
+  }
+  
+  .notification-content {
+    flex-grow: 1;
+  }
+  
+  .notification-type {
+    font-weight: bold;
+    color: var(--secondary-color);
+    font-size: 0.8rem;
+    text-transform: capitalize;
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+  
+  .notification-message {
+    margin-bottom: 0.25rem;
+    font-size: 0.95rem;
+  }
+  
+  .notification-date {
+    font-size: 0.75rem;
+    color: var(--secondary-color);
+  }
+  
+  .notification-actions {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem; /* Space between content and actions */
+  }
+  .notification-actions .btn {
+      white-space: nowrap; /* Prevent buttons from wrapping on small screens */
+  }

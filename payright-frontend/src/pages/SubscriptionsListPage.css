@@ -1,0 +1,23 @@
+/* src/pages/SubscriptionsListPage.css */
+.subscriptions-list-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 1.5rem;
+  }
+  
+  .filter-controls .btn {
+    margin-right: 0.5rem;
+  }
+  .filter-controls .btn:last-child {
+    margin-right: 0;
+  }
+  
+  .btn-outline-secondary {
+      color: var(--secondary-color);
+      border-color: var(--secondary-color);
+  }
+  .btn-outline-secondary:hover {
+      color: #fff;
+      background-color: var(--secondary-color);
+      border-color: var(--secondary-color);
+  }

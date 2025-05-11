@@ -1,0 +1,90 @@
+/* src/pages/DashboardPage.css */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column by default */
+    gap: 1.5rem;
+  }
+  
+  @media (min-width: 992px) { /* lg and up */
+    .dashboard-grid {
+      grid-template-columns: repeat(2, 1fr); /* Two columns on larger screens */
+       /* Example: Make wallet span two columns if it's very wide, or adjust as needed */
+      /* grid-template-areas:
+        "wallet wallet"
+        "subs notifs"; */
+    }
+    /* .wallet-summary-section { grid-area: wallet; } */
+    /* .recent-subscriptions-section { grid-area: subs; } */
+    /* .recent-notifications-section { grid-area: notifs; } */
+  }
+  
+  .dashboard-section {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+  }
+  
+  .dashboard-section h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.5rem;
+  }
+  
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .section-header h3 {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  
+  .subscriptions-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* default */
+    gap: 1rem;
+  }
+  
+  /* For the subscription cards within the dashboard if you want a different layout */
+  @media (min-width: 768px) { /* md and up */
+    .dashboard-section .subscriptions-grid {
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+  }
+  
+  
+  .list-group {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0;
+  }
+  .list-group-item {
+    position: relative;
+    display: block;
+    padding: 0.75rem 1.25rem;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+  }
+  .list-group-item:first-child {
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+  }
+  .list-group-item:last-child {
+    border-bottom-right-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+    margin-bottom: -1px; /* Overlap borders */
+  }
+  .list-group-item + .list-group-item {
+    border-top-width: 0;
+  }
+  .list-group-item small {
+      color: var(--secondary-color);
+      margin-right: 0.5em;
+      text-transform: capitalize;
+  }

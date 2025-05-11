@@ -1,0 +1,53 @@
+
+
+[
+  {
+    "date": "2023-11-15",
+    "description": "NETFLIX.COM",
+    "amount": 15.99,
+    "currency": "USD",
+    "source": "Mock Bank A"
+  },
+  {
+    "date": "2023-12-15",
+    "description": "NETFLIX.COM",
+    "amount": 15.99,
+    "currency": "USD",
+    "source": "Mock Bank A"
+  },
+  {
+    "date": "2024-01-15",
+    "description": "NETFLIX.COM",
+    "amount": 15.99,
+    "currency": "USD",
+    "source": "Mock Bank A"
+  },
+  {
+    "date": "2024-01-05",
+    "description": "Spotify USA",
+    "amount": 9.99,
+    "currency": "USD",
+    "source": "Mock Bank B"
+  },
+  {
+    "date": "2023-12-20",
+    "description": "Amazon Prime Video",
+    "amount": 8.99,
+    "currency": "USD",
+    "source": "Mock Bank A"
+  },
+  {
+    "date": "2024-01-02",
+    "description": "Grocery Store Purchase",
+    "amount": 75.50,
+    "currency": "USD",
+    "source": "Mock Bank A"
+  },
+  {
+    "date": "2024-01-10",
+    "description": "AWS Services Bill",
+    "amount": 42.30,
+    "currency": "USD",
+    "source": "Mock CC"
+  }
+]

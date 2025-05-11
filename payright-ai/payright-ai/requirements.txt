@@ -1,0 +1,18 @@
+# payright-ai-gemini/requirements.txt
+
+# FastAPI and ASGI Server
+fastapi>=0.95.0,<0.111.0
+uvicorn>=0.20.0,<0.30.0 # Changed from uvicorn[standard]
+
+# Data Validation and Settings
+pydantic>=1.10.0,<2.8.0
+pydantic-settings>=2.0.0,<2.3.0
+
+# Google Gemini API
+google-generativeai>=0.3.0,<0.6.0
+
+# HTTP Client for verification script
+requests>=2.25.0,<2.33.0
+
+# For managing .env file
+python-dotenv>=0.18.0,<1.1.0

@@ -1,0 +1,31 @@
+/* src/pages/AuthPage.css */
+.auth-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 56px); /* Full height minus navbar approx */
+    padding: 20px;
+    background-color: var(--light-color);
+  }
+  
+  .auth-wrapper {
+    width: 100%;
+    max-width: 400px; /* Max width for the auth form card */
+  }
+  
+  .auth-form.card { /* Target the card specifically within auth context */
+    padding: 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15) !important; /* More prominent shadow */
+  }
+  
+  .auth-form .card-title {
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+  
+  .auth-switch-link p {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+  }

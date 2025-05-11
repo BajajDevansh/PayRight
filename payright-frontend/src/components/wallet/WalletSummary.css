@@ -1,0 +1,24 @@
+/* src/components/wallet/WalletSummary.css */
+.wallet-summary-card {
+    text-align: center;
+    border-left: 5px solid var(--primary-color); /* Accent border */
+  }
+  
+  .wallet-summary-card .card-title {
+    font-size: 1rem;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+  }
+  
+  .wallet-balance {
+    font-size: 2rem; /* Make balance prominent */
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 0.25rem;
+  }
+  
+  .wallet-currency-note {
+    font-size: 0.8rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+  }

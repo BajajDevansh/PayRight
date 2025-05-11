@@ -1,0 +1,107 @@
+/* src/pages/SubscriptionDetailPage.css */
+.subscription-detail-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Default to single column */
+    gap: 1.5rem;
+  }
+  
+  @media (min-width: 992px) { /* lg and up */
+    .subscription-detail-grid {
+      grid-template-columns: 2fr 1fr; /* Main info wider, actions narrower */
+      /* If suggestions are present, they could go below or in a third column */
+      /* Example for 3 columns if suggestions are always there:
+         grid-template-columns: 1.5fr 1fr 1.5fr;
+         grid-template-areas: "main actions suggestions";
+      */
+    }
+    .suggestions-card {
+      grid-column: 1 / -1; /* Span full width if grid is 2 columns */
+      /* Or if 3 columns: grid-area: suggestions; */
+    }
+  }
+  
+  .detail-card {
+    /* Using .card styles from main.css */
+  }
+  
+  .detail-card .card-title {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+  }
+  .detail-card .status-badge {
+    font-size: 0.8rem;
+    margin-left: 0.75rem;
+  }
+  
+  .actions-card .btn-block {
+    width: 100%;
+    text-align: left; /* Or center if preferred */
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .actions-card .btn-block + .btn-block {
+    margin-top: 0.5rem; /* Spacing between buttons */
+  }
+  
+  .btn-outline-warning {
+      color: var(--warning-color);
+      border-color: var(--warning-color);
+  }
+  .btn-outline-warning:hover {
+      color: var(--dark-color);
+      background-color: var(--warning-color);
+      border-color: var(--warning-color);
+  }
+  .btn-outline-success {
+      color: var(--success-color);
+      border-color: var(--success-color);
+  }
+  .btn-outline-success:hover {
+      color: #fff;
+      background-color: var(--success-color);
+      border-color: var(--success-color);
+  }
+  .btn-outline-info {
+      color: var(--info-color);
+      border-color: var(--info-color);
+  }
+  .btn-outline-info:hover {
+      color: #fff;
+      background-color: var(--info-color);
+      border-color: var(--info-color);
+  }
+  
+  
+  .suggestions-card .list-group-item {
+    border-left: 0;
+    border-right: 0;
+  }
+  .suggestions-card .list-group-item:first-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .suggestions-card .list-group-item:last-child {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-bottom: 0;
+  }
+  .suggestion-item strong {
+      display: block;
+      font-size: 1rem;
+  }
+  .suggestion-item p {
+      font-size: 0.85rem;
+      margin-bottom: 0.25rem;
+      color: var(--secondary-color);
+  }
+  .suggestion-item .btn-sm {
+      margin-top: 0.25rem;
+  }
+  
+  /* Modal Footer Adjustments */
+  .modal-footer {
+    border-top: 1px solid var(--border-color);
+    padding-top: 15px;
+    margin-top: 15px;
+  }

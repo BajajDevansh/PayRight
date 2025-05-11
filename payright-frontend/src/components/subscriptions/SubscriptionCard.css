@@ -1,0 +1,78 @@
+/* src/components/subscriptions/SubscriptionCard.css */
+.subscription-card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    margin-bottom: 1.5rem; /* Ensure proper spacing */
+  }
+  
+  .subscription-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15) !important;
+  }
+  
+  .subscription-card.inactive {
+    opacity: 0.7;
+    background-color: #f0f0f0; /* Lighter background for inactive */
+  }
+  
+  .subscription-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .subscription-card .card-title {
+    margin-bottom: 0; /* Adjust since it's in a flex container */
+    font-size: 1.1rem;
+  }
+  
+  .status-badge {
+    font-size: 0.75rem;
+    padding: 0.25em 0.6em;
+    border-radius: 10rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .status-badge.active {
+    color: var(--success-color);
+    background-color: rgba(40, 167, 69, 0.1); /* Light green background */
+    border: 1px solid var(--success-color);
+  }
+  
+  .status-badge.inactive {
+    color: var(--secondary-color);
+    background-color: rgba(108, 117, 125, 0.1); /* Light gray background */
+    border: 1px solid var(--secondary-color);
+  }
+  
+  .amount-frequency {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--primary-color);
+  }
+  
+  .category-tag {
+    font-size: 0.8rem;
+    background-color: var(--info-color);
+    color: white;
+    padding: 0.2rem 0.5rem;
+    border-radius: var(--border-radius);
+    display: inline-block;
+    margin-top: 0.5rem;
+  }
+  
+  .cancelled-on {
+      font-size: 0.8rem;
+      color: var(--secondary-color);
+  }
+  
+  .btn-outline-primary {
+      color: var(--primary-color);
+      border-color: var(--primary-color);
+  }
+  .btn-outline-primary:hover {
+      color: #fff;
+      background-color: var(--primary-color);
+      border-color: var(--primary-color);
+  }
